@@ -19,20 +19,20 @@ Time is simulated in abstract "instants", advanced by the user. At each instant,
 
 The project follows an object-oriented design, with inheritance and polymorphism:
 
-- **Jardim & Posicao** — The garden is a dynamic array of `Posicao` objects, simulating a 2D matrix through pointer arithmetic (no STL containers for the soil).
-- **Planta** (abstract base class) — Common interface for all plants (`passarInstante`, `estaVivo`, `clone`):
-  - `Cacto` — Resistant, dies from excess water
-  - `Roseira` — Demanding, dies if surrounded by other plants
-  - `ErvaDaninha` — Parasitic, multiplies aggressively
-  - `PlantaExotica` — Group-designed "altruistic" plant that donates water to neighboring positions
-- **Ferramenta** (abstract base class) — Common interface for all tools:
-  - `Regador` — Adds water (consumable)
-  - `PacoteAdubo` — Adds nutrients (consumable)
-  - `TesouraPoda` — Removes "ugly" plants (indestructible)
-  - `FerramentaZ` — Group-designed magnet that collects every tool in the garden
-- **Jardineiro** — Player state (position, inventory, active tool) and per-turn action limits
-- **Simulador, LeitorComandos, Visualizador** — Controller, command parsing and console display
-- **Settings** — Static class holding every game parameter
+- **Jardim & Posicao**: The garden is a dynamic array of `Posicao` objects, simulating a 2D matrix through pointer arithmetic (no STL containers for the soil).
+- **Planta** (abstract base class): Common interface for all plants (`passarInstante`, `estaVivo`, `clone`):
+  - `Cacto`: Resistant, dies from excess water
+  - `Roseira`: Demanding, dies if surrounded by other plants
+  - `ErvaDaninha`: Parasitic, multiplies aggressively
+  - `PlantaExotica`: Group-designed "altruistic" plant that donates water to neighboring positions
+- **Ferramenta** (abstract base class): Common interface for all tools:
+  - `Regador`: Adds water (consumable)
+  - `PacoteAdubo`: Adds nutrients (consumable)
+  - `TesouraPoda`: Removes "ugly" plants (indestructible)
+  - `FerramentaZ`: Group-designed magnet that collects every tool in the garden
+- **Jardineiro**: Player state (position, inventory, active tool) and per-turn action limits
+- **Simulador, LeitorComandos, Visualizador**: Controller, command parsing and console display
+- **Settings**: Static class holding every game parameter
 
 ### Key Design Choices
 
