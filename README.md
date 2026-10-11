@@ -11,9 +11,9 @@ Time is simulated in abstract "instants", advanced by the user. At each instant,
 
 ## Technologies Used
 
-- **C++** — Core language
-- **CLion / CMake** — Project and build tool
-- **STL** — Only used for save/restore (`std::map`), never for the garden grid
+- **C++**: Core language
+- **CLion / CMake**: Project and build tool
+- **STL**: Only used for save/restore (`std::map`), never for the garden grid
 
 ## Architecture
 
